@@ -883,7 +883,7 @@ hrefBypass(/daominhha\.com\/download/,()=>{
 	str=str.replaceAll(",","=");
 	safelyAssign(atob(str));
 });
-hrefBypass(/(bluemediafiles\.com|pcgamestorrents.org)\/url-generator\.php\?url=/,()=>{
+hrefBypass(/(bluemediafile\.sbs|pcgamestorrents.org)\/url-generator\.php\?url=/,()=>{
 	window.setInterval=f=>setInterval(f,1)
 	transparentProperty("Time_Start",t=>t-5000)
 	awaitElement("input#nut[src]",i=>i.parentNode.submit())
@@ -2006,7 +2006,7 @@ ensureDomLoaded(()=>{
 		const url = window.location.href.split("?")[1]
 		safelyNavigate(url)
 	})
-	domainBypass("bluemediafiles.com", () => {
+	domainBypass("bluemediafile.sbs", () => {
 		document.getElementsByTagName("form")[0].submit()
 	})
 	domainBypass(/(indiainfo4u.in|intercelestial.com)/, () => {
